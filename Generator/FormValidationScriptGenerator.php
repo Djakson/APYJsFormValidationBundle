@@ -100,21 +100,8 @@ class FormValidationScriptGenerator
      */
     public function getClassMetadata ($entityName)
     {
-        // Load metadata
-        $metadata = new ClassMetadata($entityName);
-
-        // from annotations
-        $annotationloader = new AnnotationLoader(new AnnotationReader());
-        $annotationloader->loadClassMetadata($metadata);
-
-        // from php
-        // $entity = new $entityName();
-        // $entity->loadValidatorMetadata($metadata);
-
-        // from yml
-
-        // from xml
-
+        $metadata = $this->container->get('validator')->getMetadataFactory()
+            ->getMetadataFor($entityName);
         return $metadata;
     }
 
