@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Symfony2 Javascript Form Validation Bundle with localisation support",
     "keywords": ["Symfony", "javascript", "form", "validation", "i18n", "L10n", "g11n"],
-    "homepage": "https://github.com/Abhoryo/APYJsFormValidationBundle",
+    "homepage": "https://github.com/Djakson/APYJsFormValidationBundle",
     "license": "MIT",
     "authors": [
         {
@@ -12,7 +12,7 @@
         },
         {
             "name": "Community contributions",
-            "homepage": "https://github.com/Abhoryo/APYJsFormValidationBundle/graphs/contributors"
+            "homepage": "https://github.com/Djakson/APYJsFormValidationBundle/graphs/contributors"
         }
     ],
     "require": {
